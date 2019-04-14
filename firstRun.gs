@@ -1,3 +1,8 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Jim Fang. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
 function myFunction() {
   var threads = GmailApp.search("label:all") //Find all emails - this will cover most of your emails, and the stuff below is just to make sure.
   // var configGet = DriveApp.getFilesByName("privateEmailsConfig.json")

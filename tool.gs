@@ -1,3 +1,8 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Jim Fang. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
 function myFunction() {
   var threads = GmailApp.search('newer_than:7d in:anywhere')
   // var configGet = DriveApp.getFilesByName("privateEmailsConfig.json")
