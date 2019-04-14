@@ -1,6 +1,7 @@
 function myFunction() {
   var threads = GmailApp.search('newer_than:7d in:anywhere')
-
+  // var configGet = DriveApp.getFilesByName("privateEmailsConfig.json")
+  // var config = JSON.parse(configGet)
   for (var i = 0; i < threads.length; i++) {
     Logger.log("I: " + i)
     Logger.log("LEN: " + threads.length);
@@ -28,7 +29,7 @@ function myFunction() {
         var labelRadar = GmailApp.getUserLabelByName("Organization/Aviation");
         threads[i].addLabel(labelRadar);
       }
-      else if (messages[j].getSubject().toLowerCase().indexOf("confirmation") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirm") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirmed") != -1 || messages[j].getSubject().toLowerCase().indexOf("reservation") != -1) {
+      else if (messages[j].getSubject().toLowerCase().indexOf("confirmation") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirm") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirmed") != -1 || messages[j].getSubject().toLowerCase().indexOf("reservation") != -1 || (messages[j].getSubject().toLowerCase().indexOf("appointment") != -1 && messages[j].getSubject().toLowerCase().indexOf("appointments") === -1)) {
         if (messages[j].getSubject().toLowerCase().indexOf("confirm your email") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirm jfang.cv.ca.us@gmail.com") != -1) {
 
         } else {
