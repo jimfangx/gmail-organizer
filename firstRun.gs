@@ -33,24 +33,6 @@ function myFunction() {
     for (var j = 0; j < messages.length; j++) {
 
       //Place first run code here.
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
-
-
-=======
-      if (messages[j].getSubject().toLowerCase().indexOf("confirmation") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirm") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirmed") != -1 || messages[j].getSubject().toLowerCase().indexOf("reservation") != -1 || messages[j].getSubject().toLowerCase().indexOf("appointment") != -1) {
-        if (messages[j].getSubject().toLowerCase().indexOf("confirm your email") != -1 || messages[j].getSubject().toLowerCase().indexOf("confirm jfang.cv.ca.us@gmail.com") != -1) {
-
-        } else {
-          var labelConfirm = GmailApp.getUserLabelByName("Organization/Confirmations & Reservations");
-          threads[i].addLabel(labelConfirm);
-        }
-      }
->>>>>>> master
->>>>>>> master
     }
   }
 }
